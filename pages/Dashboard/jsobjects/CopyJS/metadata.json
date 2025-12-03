@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "692d41cb5402f90e31c4d03f_6390eaa3-dff4-4f63-a9eb-ce6b19b8cb6c",
+  "id": "Dashboard_CopyJS",
+  "unpublishedCollection": {
+    "name": "CopyJS",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

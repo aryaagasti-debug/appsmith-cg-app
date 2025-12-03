@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "692d41cb5402f90e31c4d03f_bbbff0c1-48fa-4865-a6c3-f029c59d917c",
+  "id": "Login_AuthJS",
+  "unpublishedCollection": {
+    "name": "AuthJS",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
