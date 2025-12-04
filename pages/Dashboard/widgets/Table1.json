@@ -7,7 +7,7 @@
   "bottomRow": 50,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
-  "canFreezeColumn": true,
+  "canFreezeColumn": false,
   "cellBackground": "#71717a",
   "childStylesheet": {
     "button": {
