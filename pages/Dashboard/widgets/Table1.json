@@ -40,11 +40,10 @@
     "Username",
     "Password__Hashed_",
     "Features",
-    "rowIndex",
     "customColumn1",
-    "customColumn2"
+    "rowIndex"
   ],
-  "columnUpdatedAt": 1764833559085,
+  "columnUpdatedAt": 1764839109450,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -95,22 +94,10 @@
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
       "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn2.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn2.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -119,9 +106,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -139,9 +123,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -407,13 +388,13 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "Copy URL",
+      "alias": "Copy",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "Copy URL\n",
+      "buttonColor": "#71717a",
+      "buttonLabel": "📋",
       "buttonStyle": "rgb(3, 179, 101)",
       "cellBackground": "#71717a",
       "columnType": "button",
@@ -434,52 +415,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Copy URL",
+      "label": "Copy",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{ CopyJS.copyURL(currentRow) }}\n",
+      "onClick": "{{ CopyJS.copyRow(currentRow) }}\n",
       "originalId": "customColumn1",
-      "sticky": "",
-      "textColor": "#fef9c3",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn2": {
-      "alias": "Copy Username",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "Copy Username",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "cellBackground": "#71717a",
-      "columnType": "button",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn2",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Copy Username",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "onClick": "{{ CopyJS.copyUsername(currentRow) }}\n",
-      "originalId": "customColumn2",
       "sticky": "",
       "textColor": "#fef9c3",
       "textSize": "0.875rem",

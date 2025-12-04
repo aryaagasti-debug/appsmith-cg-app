@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "692d41cb5402f90e31c4d03f_a8fa86fd-c352-415f-9eb8-231eb3373c93",
-  "id": "Dashboard_CopyJS.copyURL",
+  "gitSyncId": "692d41cb5402f90e31c4d03f_632433b3-d355-4ca0-8b48-a7acab83079b",
+  "id": "Dashboard_CopyJS.copyRow",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -26,8 +26,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "CopyJS.copyURL",
-    "name": "copyURL",
+    "fullyQualifiedName": "CopyJS.copyRow",
+    "name": "copyRow",
     "pageId": "Dashboard",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
