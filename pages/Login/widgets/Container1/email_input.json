@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
+  "autoFocus": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
@@ -18,9 +18,23 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
     }
   ],
   "errorMessage": "Please enter a valid email address\n",
@@ -36,6 +50,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
+  "labelTextColor": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
@@ -47,7 +62,9 @@
   "mobileRightColumn": 31,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
+  "onFocus": "{{ {} }}\n",
   "onSubmit": "{{AuthJS.login();}}",
+  "onTextChanged": "{{ {} }}\n",
   "originalBottomRow": 15,
   "originalTopRow": 11,
   "parentColumnSpace": 8.4375,

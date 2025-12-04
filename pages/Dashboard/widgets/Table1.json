@@ -125,7 +125,7 @@
       "key": "primaryColumns.customColumn1.onClick"
     }
   ],
-  "enableClientSideSearch": false,
+  "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
