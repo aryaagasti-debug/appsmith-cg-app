@@ -70,7 +70,7 @@
     ],
     "name": "Total_record_Sheet12",
     "pageId": "Dashboard",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

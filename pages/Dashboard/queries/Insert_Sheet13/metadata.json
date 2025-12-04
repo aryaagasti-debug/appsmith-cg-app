@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "692d41cb5402f90e31c4d03f_4d7484e9-0c54-45fb-98fb-e5ce3b4ded7a",
-  "id": "Dashboard_Find_Sheet12",
+  "gitSyncId": "692d41cb5402f90e31c4d03f_f26080a7-9ee5-4745-8f9f-0d8217796295",
+  "id": "Dashboard_Insert_Sheet13",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,15 +8,15 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "data": "FETCH_MANY"
+          "data": "INSERT_ONE"
         },
         "entityType": {
           "data": "ROWS"
         },
         "pagination": {
           "data": {
-            "limit": "{{Table1.pageSize}}",
-            "offset": "{{Table1.pageOffset}}"
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
@@ -28,6 +28,9 @@
         "range": {
           "data": ""
         },
+        "rowObjects": {
+          "data": "{{(Table1.newRow || {})}}"
+        },
         "sheetName": {
           "data": "Sheet1"
         },
@@ -37,26 +40,11 @@
         "smartSubstitution": {
           "data": true
         },
-        "sortBy": {
-          "data": [
-            {
-              "column": "{{Table1.sortOrder.column}}",
-              "order": "Table1.sortOrder.order !== \"desc\""
-            }
-          ]
-        },
         "tableHeaderIndex": {
           "data": "1"
         },
         "where": {
           "data": {
-            "children": [
-              {
-                "condition": "CONTAINS",
-                "key": "{{Table1.searchText ? \"Client Name\" : \"\"}}",
-                "value": "{{Table1.searchText}}"
-              }
-            ],
             "condition": "AND"
           }
         }
@@ -73,16 +61,10 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.where.data"
-      },
-      {
-        "key": "formData.sortBy.data"
-      },
-      {
-        "key": "formData.pagination.data"
+        "key": "formData.rowObjects.data"
       }
     ],
-    "name": "Find_Sheet12",
+    "name": "Insert_Sheet13",
     "pageId": "Dashboard",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

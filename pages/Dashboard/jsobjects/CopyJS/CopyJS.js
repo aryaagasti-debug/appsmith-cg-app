@@ -8,7 +8,6 @@ export default {
       return false;
     }
 
-    // ✅ Combine both into ONE COPY
     const textToCopy = `
 URL: ${url || "N/A"}
 Username: ${username || "N/A"}
@@ -16,7 +15,7 @@ Username: ${username || "N/A"}
 
     copyToClipboard(textToCopy);
 
-    showAlert("✅ URL & Username copied together!", "success");
+    showAlert("URL & Username copied together!", "success");
     return true;
   }
 }

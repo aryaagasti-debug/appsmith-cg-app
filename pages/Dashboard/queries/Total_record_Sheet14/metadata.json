@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "692d41cb5402f90e31c4d03f_4d7484e9-0c54-45fb-98fb-e5ce3b4ded7a",
-  "id": "Dashboard_Find_Sheet12",
+  "gitSyncId": "692d41cb5402f90e31c4d03f_709d6600-441c-43de-9705-993d32114d75",
+  "id": "Dashboard_Total_record_Sheet14",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,8 +15,8 @@
         },
         "pagination": {
           "data": {
-            "limit": "{{Table1.pageSize}}",
-            "offset": "{{Table1.pageOffset}}"
+            "limit": "20",
+            "offset": "0"
           }
         },
         "projection": {
@@ -36,14 +36,6 @@
         },
         "smartSubstitution": {
           "data": true
-        },
-        "sortBy": {
-          "data": [
-            {
-              "column": "{{Table1.sortOrder.column}}",
-              "order": "Table1.sortOrder.order !== \"desc\""
-            }
-          ]
         },
         "tableHeaderIndex": {
           "data": "1"
@@ -74,15 +66,9 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.where.data"
-      },
-      {
-        "key": "formData.sortBy.data"
-      },
-      {
-        "key": "formData.pagination.data"
       }
     ],
-    "name": "Find_Sheet12",
+    "name": "Total_record_Sheet14",
     "pageId": "Dashboard",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
