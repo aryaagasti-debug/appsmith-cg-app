@@ -177,7 +177,7 @@
   "isSortable": false,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": true,
   "key": "vlbe3g8yr7",
