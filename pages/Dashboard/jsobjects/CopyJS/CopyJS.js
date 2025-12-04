@@ -9,8 +9,8 @@ export default {
       return;
     }
 
-    const textToCopy = `Username: ${username || "N/A"}
-URL: ${url || "N/A"}
+    const textToCopy = `url: ${url || "N/A"}
+username: ${username || "N/A"}
 Password: ${password || "N/A"}`;
 
     copyToClipboard(textToCopy);
