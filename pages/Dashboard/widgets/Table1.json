@@ -46,12 +46,13 @@
   "columnUpdatedAt": 1764839109450,
   "columnWidthMap": {
     "Client_Name": 104,
-    "Features": 233,
+    "Features": 228,
     "Password__Hashed_": 114,
     "Region": 111,
     "SR_No": 60,
     "URL": 227,
-    "Username": 113
+    "Username": 113,
+    "customColumn1": 65
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
