@@ -45,13 +45,13 @@
   ],
   "columnUpdatedAt": 1764839109450,
   "columnWidthMap": {
-    "Client_Name": 120,
-    "Features": 236,
+    "Client_Name": 104,
+    "Features": 233,
     "Password__Hashed_": 114,
     "Region": 111,
     "SR_No": 60,
-    "URL": 89,
-    "Username": 105
+    "URL": 227,
+    "Username": 113
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -106,6 +106,36 @@
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "fontStyle"
+    },
+    {
+      "key": "primaryColumns.SR_No.fontStyle"
+    },
+    {
+      "key": "primaryColumns.Region.fontStyle"
+    },
+    {
+      "key": "primaryColumns.Client_Name.fontStyle"
+    },
+    {
+      "key": "primaryColumns.URL.fontStyle"
+    },
+    {
+      "key": "primaryColumns.Username.fontStyle"
+    },
+    {
+      "key": "primaryColumns.Password__Hashed_.fontStyle"
+    },
+    {
+      "key": "primaryColumns.Features.fontStyle"
+    },
+    {
+      "key": "primaryColumns.rowIndex.fontStyle"
+    },
+    {
+      "key": "primaryColumns.customColumn1.fontStyle"
     }
   ],
   "dynamicPropertyPathList": [
@@ -114,6 +144,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "fontStyle"
     }
   ],
   "dynamicTriggerPathList": [
@@ -136,6 +169,7 @@
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
+  "fontStyle": "{{}}",
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
@@ -175,6 +209,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "Client_Name",
       "index": 2,
@@ -208,6 +243,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "Features",
       "index": 6,
@@ -241,6 +277,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "Password__Hashed_",
       "index": 5,
@@ -274,6 +311,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "Region",
       "index": 1,
@@ -307,6 +345,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "SR_No",
       "index": 0,
@@ -340,6 +379,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "URL",
       "index": 3,
@@ -373,6 +413,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "Username",
       "index": 4,
@@ -412,6 +453,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "customColumn1",
       "index": 8,
@@ -447,6 +489,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "{{}}",
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
       "index": 7,
