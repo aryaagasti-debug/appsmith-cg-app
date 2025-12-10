@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jrsw606uqw",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{ThemeJS.toggleTheme()}}",
+  "parentColumnSpace": 15.943359375,
+  "parentId": "ocdowlfbbm",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 9,
+  "text": "{{ appsmith.store.isDarkMode ? \"☀️ Light\" : \"🌙 Dark\" }}\n",
+  "topRow": 4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "rhegmv05yj",
+  "widgetName": "Button1"
+}

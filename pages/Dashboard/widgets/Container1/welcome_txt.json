@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 12,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,9 +14,17 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
@@ -24,7 +32,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "96ngd7wyni",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -37,16 +45,16 @@
   "originalTopRow": 6,
   "overflow": "NONE",
   "parentColumnSpace": 8.4375,
-  "parentId": "0",
+  "parentId": "ocdowlfbbm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 26,
   "shouldTruncate": false,
   "text": "{{\n  appsmith.store.userRole === \"admin\"\n    ? `Welcome Admin (${appsmith.store.userEmail})`\n    : `Welcome User (${appsmith.store.userEmail})`\n}}\n",
   "textAlign": "CENTER",
-  "textColor": "#3f3f46",
-  "topRow": 6,
+  "textColor": "{{ appsmith.store.isDarkMode ? \"#f5f5f5\" : \"#1f1f1f\" }}\n",
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

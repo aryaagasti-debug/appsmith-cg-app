@@ -4,11 +4,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 49,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": false,
-  "cellBackground": "#71717a",
+  "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -46,13 +46,13 @@
   "columnUpdatedAt": 1764839109450,
   "columnWidthMap": {
     "Client_Name": 104,
-    "Features": 228,
-    "Password__Hashed_": 114,
+    "Features": 255,
+    "Password__Hashed_": 138,
     "Region": 111,
     "SR_No": 60,
     "URL": 227,
     "Username": 113,
-    "customColumn1": 65
+    "customColumn1": 140
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -109,34 +109,67 @@
       "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
-      "key": "fontStyle"
+      "key": "cellBackground"
     },
     {
-      "key": "primaryColumns.SR_No.fontStyle"
+      "key": "primaryColumns.SR_No.cellBackground"
     },
     {
-      "key": "primaryColumns.Region.fontStyle"
+      "key": "primaryColumns.Region.cellBackground"
     },
     {
-      "key": "primaryColumns.Client_Name.fontStyle"
+      "key": "primaryColumns.Client_Name.cellBackground"
     },
     {
-      "key": "primaryColumns.URL.fontStyle"
+      "key": "primaryColumns.URL.cellBackground"
     },
     {
-      "key": "primaryColumns.Username.fontStyle"
+      "key": "primaryColumns.Username.cellBackground"
     },
     {
-      "key": "primaryColumns.Password__Hashed_.fontStyle"
+      "key": "primaryColumns.Password__Hashed_.cellBackground"
     },
     {
-      "key": "primaryColumns.Features.fontStyle"
+      "key": "primaryColumns.Features.cellBackground"
     },
     {
-      "key": "primaryColumns.rowIndex.fontStyle"
+      "key": "primaryColumns.rowIndex.cellBackground"
     },
     {
-      "key": "primaryColumns.customColumn1.fontStyle"
+      "key": "primaryColumns.customColumn1.cellBackground"
+    },
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "primaryColumns.SR_No.textColor"
+    },
+    {
+      "key": "primaryColumns.Region.textColor"
+    },
+    {
+      "key": "primaryColumns.Client_Name.textColor"
+    },
+    {
+      "key": "primaryColumns.URL.textColor"
+    },
+    {
+      "key": "primaryColumns.Username.textColor"
+    },
+    {
+      "key": "primaryColumns.Password__Hashed_.textColor"
+    },
+    {
+      "key": "primaryColumns.Features.textColor"
+    },
+    {
+      "key": "primaryColumns.rowIndex.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -148,6 +181,15 @@
     },
     {
       "key": "fontStyle"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -170,7 +212,7 @@
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
-  "fontStyle": "{{}}",
+  "fontStyle": "{}",
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
@@ -182,7 +224,7 @@
   "isVisibleSearch": true,
   "key": "vlbe3g8yr7",
   "label": "Data",
-  "leftColumn": 0,
+  "leftColumn": 6,
   "minWidth": 450,
   "mobileBottomRow": 59,
   "mobileLeftColumn": 7,
@@ -196,21 +238,21 @@
   "originalBottomRow": 50,
   "originalTopRow": 19,
   "parentColumnSpace": 6.84375,
-  "parentId": "0",
+  "parentId": "ocdowlfbbm",
   "parentRowSpace": 10,
   "primaryColumns": {
     "Client_Name": {
       "alias": "Client Name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Client Name\"])) : Client Name })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "Client_Name",
       "index": 2,
@@ -226,7 +268,7 @@
       "notation": "standard",
       "originalId": "Client Name",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -237,14 +279,14 @@
       "alias": "Features",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Features\"])) : Features })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "Features",
       "index": 6,
@@ -260,7 +302,7 @@
       "notation": "standard",
       "originalId": "Features",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -271,14 +313,14 @@
       "alias": "Password (Hashed)",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Password (Hashed)\"])) : Password (Hashed) })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "Password__Hashed_",
       "index": 5,
@@ -294,7 +336,7 @@
       "notation": "standard",
       "originalId": "Password (Hashed)",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -305,14 +347,14 @@
       "alias": "Region",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Region\"])) : Region })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "Region",
       "index": 1,
@@ -328,7 +370,7 @@
       "notation": "standard",
       "originalId": "Region",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -339,14 +381,14 @@
       "alias": "SR No",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"SR No\"])) : SR No })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "SR_No",
       "index": 0,
@@ -362,7 +404,7 @@
       "notation": "standard",
       "originalId": "SR No",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -373,14 +415,14 @@
       "alias": "URL",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"URL\"])) : URL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "URL",
       "index": 3,
@@ -396,7 +438,7 @@
       "notation": "standard",
       "originalId": "URL",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -407,14 +449,14 @@
       "alias": "Username",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Username\"])) : Username })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "Username",
       "index": 4,
@@ -430,7 +472,7 @@
       "notation": "standard",
       "originalId": "Username",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -443,10 +485,10 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#71717a",
+      "buttonColor": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( appsmith.store.isDarkMode ? \"#3a3a3a\" : \"#e5e7eb\" )) :  appsmith.store.isDarkMode ? \"#3a3a3a\" : \"#e5e7eb\"  })()}}",
       "buttonLabel": "📋",
       "buttonStyle": "rgb(3, 179, 101)",
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "button",
       "computedValue": "",
       "currencyCode": "USD",
@@ -454,7 +496,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "customColumn1",
       "index": 8,
@@ -469,10 +511,10 @@
       "label": "Copy",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{ CopyJS.copyRow(currentRow) }}\n",
+      "onClick": "{{ CopyJS.copyRow(currentRow) }}\n\n\n",
       "originalId": "customColumn1",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -483,14 +525,14 @@
       "alias": "rowIndex",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#71717a",
+      "cellBackground": "{{ \n  appsmith.store.isDarkMode \n    ? \"#333333\"\n    : \"#f6f7f9\"\n}}\n",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rowIndex\"])) : rowIndex })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "{{}}",
+      "fontStyle": "{}",
       "horizontalAlignment": "LEFT",
       "id": "rowIndex",
       "index": 7,
@@ -506,7 +548,7 @@
       "notation": "standard",
       "originalId": "rowIndex",
       "sticky": "",
-      "textColor": "#fef9c3",
+      "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -516,13 +558,13 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 60,
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "tableData": "{{Api3.data}}",
-  "textColor": "#fef9c3",
+  "textColor": "{{ \n  appsmith.store.isDarkMode \n    ? \"#f1f1f1\"   // light text on dark bg\n    : \"#1f2937\"   // dark text on white bg\n}}\n",
   "textSize": "0.875rem",
-  "topRow": 18,
+  "topRow": 12,
   "totalRecordsCount": "{{Total_record_Sheet17.data.length}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
